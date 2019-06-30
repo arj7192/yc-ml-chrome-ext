@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Youtube Comments ML Chrome Extension",
+  "description": "This extension shows analytics on youtube video comments",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Click here!"
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "http://3.19.72.76:8087/"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*","*://*.youtu.be/*"],//["http://flipkart.com/*","https://flipkart.com/*","http://www.flipkart.com/*","https://www.flipkart.com/*"],
+      "js": ["content_script.js"]
+    }
+  ] //,
+//
+//   "background": {
+//     "persistent": false,
+//     "scripts": ["background.js"]
+//   }
+}
