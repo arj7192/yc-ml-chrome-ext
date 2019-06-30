@@ -34,7 +34,7 @@ function getCurrentTabUrl(callback) {
     url = url.replace("http://", "");
     if(!url.startsWith("youtube.com") && !url.startsWith("youtu.be")) {
       url = "";
-      renderStatus('Currently only woroks for a youtube page');
+      renderStatus('Currently only works for a youtube page');
       return;
     }
     else if(url.startsWith("youtube.com")) {

@@ -19,13 +19,8 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*","*://*.youtu.be/*"],//["http://flipkart.com/*","https://flipkart.com/*","http://www.flipkart.com/*","https://www.flipkart.com/*"],
+      "matches": ["*://*.youtube.com/*","*://*.youtu.be/*"],
       "js": ["content_script.js"]
     }
-  ] //,
-//
-//   "background": {
-//     "persistent": false,
-//     "scripts": ["background.js"]
-//   }
+  ]
 }
